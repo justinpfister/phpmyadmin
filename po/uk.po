@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: phpMyAdmin 5.0.0-dev\n"
 "Report-Msgid-Bugs-To: translators@phpmyadmin.net\n"
-"POT-Creation-Date: 2018-09-17 18:18-0300\n"
-"PO-Revision-Date: 2018-09-12 13:50+0000\n"
-"Last-Translator: Isaac Bennetch <bennetch@gmail.com>\n"
+"POT-Creation-Date: 2018-09-27 13:13-0300\n"
+"PO-Revision-Date: 2018-09-20 21:57+0000\n"
+"Last-Translator: Володимир Бриняк <bardvv@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/phpmyadmin/"
 "master/uk/>\n"
 "Language: uk\n"
@@ -1196,7 +1196,7 @@ msgstr "Будь ласка, додайте хоча б одну змінну в
 #: libraries/classes/Plugins/Export/ExportSql.php:2200
 #: libraries/classes/Plugins/Schema/SchemaPdf.php:105
 #: libraries/classes/Server/Status/Monitor.php:245
-#: libraries/classes/Server/Status/Processes.php:287
+#: libraries/classes/Server/Status/Processes.php:289
 #: libraries/config.values.php:80 templates/table/search/selection_form.twig:35
 #: templates/display/export/options_output_compression.twig:7
 #: templates/server/privileges/privileges_summary.twig:30
@@ -1635,7 +1635,7 @@ msgstr "Виконати"
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: js/messages.php:356 libraries/classes/Header.php:467
+#: js/messages.php:356 libraries/classes/Header.php:486
 msgid "Page-related settings"
 msgstr "Налаштування пов'язаної сторінки"
 
@@ -5762,7 +5762,7 @@ msgstr "Тлумачити SQL"
 
 #: libraries/classes/Config/Descriptions.php:820
 #: libraries/classes/Export.php:534
-#: libraries/classes/Server/Status/Processes.php:235
+#: libraries/classes/Server/Status/Processes.php:237
 #: libraries/classes/Server/Status/Variables.php:52
 #: libraries/classes/Util.php:1165 templates/console/display.twig:99
 msgid "Refresh"
@@ -6512,12 +6512,12 @@ msgid "Previous"
 msgstr "Попередня"
 
 #: libraries/classes/Controllers/Server/ServerBinlogController.php:214
-#: libraries/classes/Server/Status/Processes.php:183
+#: libraries/classes/Server/Status/Processes.php:184
 msgid "Truncate Shown Queries"
 msgstr "Обрізати показані запити"
 
 #: libraries/classes/Controllers/Server/ServerBinlogController.php:218
-#: libraries/classes/Server/Status/Processes.php:185
+#: libraries/classes/Server/Status/Processes.php:187
 msgid "Show Full Queries"
 msgstr "Показати повні запити"
 
@@ -6756,11 +6756,9 @@ msgstr ""
 
 #: libraries/classes/Core.php:1241
 msgid ""
-"You have disabled ini_get and/or ini_set in php.ini. This option is "
-"incompatible with phpMyAdmin!"
+"The ini_get and/or ini_set functions are disabled in php.ini. phpMyAdmin "
+"requires these functions!"
 msgstr ""
-"Ви відключили ini_get і/або ini_set в php.ini. Цей вибір несумісний з "
-"phpMyAdmin!"
 
 #: libraries/classes/Core.php:1296
 msgid "GLOBALS overwrite attempt"
@@ -7178,7 +7176,7 @@ msgstr "Рядок видалено."
 
 #: libraries/classes/Display/Results.php:3560
 #: libraries/classes/Display/Results.php:4916
-#: libraries/classes/Server/Status/Processes.php:281
+#: libraries/classes/Server/Status/Processes.php:283
 msgid "Kill"
 msgstr "Анулювати"
 
@@ -7688,15 +7686,15 @@ msgstr "Відсутня інформація про Git!"
 msgid "Open new phpMyAdmin window"
 msgstr "Відкрити нове вікно phpMyAdmin"
 
-#: libraries/classes/Header.php:396
+#: libraries/classes/Header.php:403
 msgid "Print view"
 msgstr "Версія для друку"
 
-#: libraries/classes/Header.php:474
+#: libraries/classes/Header.php:493
 msgid "Click on the bar to scroll to top of page"
 msgstr "Натисніть на панелі, щоб перейти на верх сторінки"
 
-#: libraries/classes/Header.php:785 templates/login/header.twig:11
+#: libraries/classes/Header.php:707 templates/login/header.twig:11
 msgid "Javascript must be enabled past this point!"
 msgstr "З цього моменту Javascript має бути увімкнений!"
 
@@ -12087,12 +12085,12 @@ msgstr "Команда"
 msgid "Progress"
 msgstr "Прогрес"
 
-#: libraries/classes/Server/Status/Processes.php:232
+#: libraries/classes/Server/Status/Processes.php:234
 #: libraries/classes/Server/Status/Variables.php:49 templates/filter.twig:2
 msgid "Filters"
 msgstr "Фільтри"
 
-#: libraries/classes/Server/Status/Processes.php:240
+#: libraries/classes/Server/Status/Processes.php:242
 msgid "Show only active"
 msgstr "Показати тільки активні"
 
@@ -14866,8 +14864,6 @@ msgstr "Використовуйте OpenStreetMaps як базовий плас
 
 # Ідентифікатор просторової системи координат
 #: templates/gis_data_editor_form.twig:38
-#, fuzzy
-#| msgid "SRID:"
 msgctxt "Spatial Reference System Identifier"
 msgid "SRID:"
 msgstr "SRID:"
@@ -14884,10 +14880,9 @@ msgstr "Точка:"
 #: templates/gis_data_editor_form.twig:92
 #: templates/gis_data_editor_form.twig:133
 #: templates/gis_data_editor_form.twig:185
-#, fuzzy, php-format
-#| msgid "Point %d"
+#, php-format
 msgid "Point %d:"
-msgstr "Точка %d"
+msgstr "Точка %d:"
 
 #: templates/gis_data_editor_form.twig:112
 #, php-format
@@ -15816,17 +15811,12 @@ msgid "Secret/key:"
 msgstr "Секрет/ключ:"
 
 #: templates/login/header.twig:15
-#, fuzzy
-#| msgid ""
-#| "There is mismatch between HTTPS indicated on the server and client. This "
-#| "can lead to non working phpMyAdmin or a security risk. Please fix your "
-#| "server configuration to indicate HTTPS properly."
 msgid ""
 "There is a mismatch between HTTPS indicated on the server and client. This "
 "can lead to a non working phpMyAdmin or a security risk. Please fix your "
 "server configuration to indicate HTTPS properly."
 msgstr ""
-"Існує невідповідність між HTTPS вказаними на сервері і клієнтом. Це може "
+"Існує невідповідність між зазначеним HTTPS на сервері і клієнтом. Це може "
 "привести до неполадок або загрозі безпеки phpMyAdmin. Будь ласка, виправте "
 "конфігурацією сервера, щоб вказати HTTPS належним чином."
 
@@ -17621,6 +17611,13 @@ msgstr ""
 #: libraries/advisory_rules.txt:446
 msgid "concurrent_insert is set to 0"
 msgstr "concurrent_insert встановлено у 0"
+
+#~ msgid ""
+#~ "You have disabled ini_get and/or ini_set in php.ini. This option is "
+#~ "incompatible with phpMyAdmin!"
+#~ msgstr ""
+#~ "Ви відключили ini_get і/або ini_set в php.ini. Цей вибір несумісний з "
+#~ "phpMyAdmin!"
 
 #~ msgid "No auto-saved query"
 #~ msgstr "Немає автоматичного збереження запиту"
